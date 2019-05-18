@@ -1,0 +1,13 @@
+{
+    "name": "rebi-gabi",
+    "version": "1.0.0",
+    "description": "wedding website for us",
+    "main": "api/index.js",
+    "scripts": {
+        "start": "node api/index.js"
+    },
+    "packages": {},
+    "dependencies": {
+        "express": "^4.17.0"
+    }
+}
