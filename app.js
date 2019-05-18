@@ -1,20 +1,22 @@
 const express = require('express'),
+    http = require('http'),
     path = require('path');
 
-    const allRoute = require('./api/routes/all.route');
-
     const app = express();
-    let port = process.env.PORT || 3001;
     
     // API
-    // app.use('/all', allRoute);
+    // const allRoute = require('./api/routes/all.route');
+    // app.use('/all', allRoute);g
 
     // UI
-    app.use(express.static(path.join(__dirname, 'dist')))
+    app.use(express.static(path.join(__dirname, 'dist/rebi-gabi')))
+    app.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname, 'dist/rebi-gabi/index.html'));
+    });
 
-    app.get('/', (req, res) => res.render('dist/index.html'));
-
-    app.set('port', port);
-    const server = app.listen(function(){
+    // configure server
+    let port = process.env.PORT || 3001;
+    const server = http.createServer(app);
+    server.listen(port, () => {
         console.log('Listening on port ' + port);
     });
