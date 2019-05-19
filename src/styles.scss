@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Baloo|Crimson+Text|Goudy+Bookletter+1911|Josefin+Sans:400,600&display=swap');
+
+body {
+    font-size: 12px;
+    font-family: 'Baloo', cursive;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-family: 'Crimson Text', serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.main-container .addeventatc {
+    padding: 70px 15px 20px;
+    width: 100%;
+    text-align: center;
+    border-left: 2px solid #EF5350;
+    border-radius: 0;
+    box-shadow: 0 0 transparent !important;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    font-family: 'Crimson Text'!important;
+    font-weight: 400!important;
+    -webkit-font-smoothing: inherit!important;
+}
+.main-container .addeventatc .addeventatc_icon {
+    background-image: url('assets/img/calendar-27.svg')!important;
+}
+
+.main-container .addeventatc.sechsundzwanzig .addeventatc_icon {
+    background-image: url('assets/img/calendar-26.svg')!important;
+}
+
+.main-container .addeventatc .addeventatc_icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 1;
+    left: 67px;
+    top: 10px;
+    background-size: 48px 48px;
+    display: block;
+    background-position: center;
+    color: #fff !important;
+}
+
+.main-container .addeventatc:hover {
+    font-size: 1.2em;
+}
+.main-container .addeventatc_dropdown .copyx {
+    display: none;
+}

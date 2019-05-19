@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+
+    .main {
+        padding-left: 50px;
+        flex-grow: 1;
+    
+        h2 { 
+            font-size: 5em;
+            max-width: 550px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+    }
+    
+    .right-menu {
+        width: 185px;
+        h4 {
+            margin-bottom: 20px;
+        }
+        .maps-button {
+            display: block;
+            border: none;
+            background: url('/assets/img/google-maps.svg') center 10px no-repeat;
+            background-size: 48px;
+            padding: 70px 10px 10px;
+            width: 100%;
+            border-left: 2px solid #EF5350;
+        }
+        
+        .maps-button p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .maps-button:hover {
+            background-color: #fafafa;
+        }
+    }
+}

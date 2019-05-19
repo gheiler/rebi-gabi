@@ -1,0 +1,54 @@
+header {
+    padding-bottom: 100px;
+    
+    .header-main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+
+        h1 {
+            display: inline;
+        }
+
+        nav.main-menu a {
+            margin: 0 20px;
+            padding: 0 10px;
+            color: #404040;
+            font-weight: 600;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+        
+        nav.main-menu a:hover, nav.main-menu a.selected {
+            padding-bottom: 2px;
+            border-bottom: 1px solid #EF5350;
+            opacity: 1;
+        }
+    }
+
+    button.action-btn {
+        color: #fff;
+        background: #EF5350;
+        border: none;
+        padding: 6px 20px;
+        font-size: 1.1em;
+        font-family: 'Baloo', cursive;
+    }
+}
+    
+.languages {
+    text-align: right;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1.3em;
+
+    a {
+        color: #EF5350;
+        text-decoration: none;
+        font-family: monospace;
+    }
+}

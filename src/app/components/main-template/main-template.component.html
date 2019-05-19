@@ -1,0 +1,22 @@
+<div class="main-container">
+  <header>
+    <div class="header-main">
+      <h1 class="main-title">rebi + gabi</h1>
+      <nav class="main-menu">
+          <a [routerLink]="['home']" [innerHTML]="'inicio' | translate" [class.selected]="section == 'home' || !section" ></a>
+          <a *ngIf="isStandesamt" [routerLink]="['standesamt-details']" [innerHTML]="'civil' | translate" [class.selected]="section == 'registry'"></a>
+          <a [routerLink]="['hochzeit-details']" [innerHTML]="'boda' | translate" [class.selected]="section == 'wedding'" ></a>
+      </nav>
+      <div class="action">
+        <button class="action-btn" [innerHtml]="'formulario' | translate" (click)="openGoogleForm()" ></button>
+      </div>
+    </div>
+  </header>
+
+  <router-outlet></router-outlet>
+  <div class="languages">
+    <a *ngIf="languageService.getLanguage() == 'es'" [routerLink]="['', 'de', isStandesamt ? 'standesamt' : '']" >deutsch</a>
+    <a *ngIf="languageService.getLanguage() == 'de'" [routerLink]="['', 'es', isStandesamt ? 'standesamt' : '']" >español</a> 
+  </div>
+</div>
+

@@ -1,0 +1,39 @@
+<div class="home">
+  <div class="main">
+      <h2 [innerHTML]="'Nos casamos y te invitamos a compartirlo juntos' | translate"></h2>
+      <h3 [innerHTML]="'27 de Julio 15:30hs, Jugendkulturzentrum Königstadt, Saarbrücker Str. 24, 10405 Berlin.' | translate"></h3>    
+  </div>
+  <div class="right-menu">
+    <h4 *ngIf="isStandesamt">
+      <div title="standesamt zum kalendar" class="addeventatc sechsundzwanzig">
+        {{ 'agregar civil al calendario' | translate }}
+        <span class="start">2019-07-26 10:30</span>
+        <span class="end">2019-07-26 12:00</span>
+        <span class="timezone"><span class="timezone">Europe/Berlin</span></span>
+        <span class="title" [innerHTML]="'Civil Rebi + Gabi' | translate">Civil Rebi + Gabi</span>
+        <span class="description" [innerHTML]="'Civil Rebi + Gabi 2' | translate">Civil Rebi + Gabi</span>
+        <span class="location">Standesamt Friedrichshain-Kreuzberg, Schlesische Str. 27A, 10997 Berlin</span>
+        <span class="organizer" [innerHTML]="'Rebecca Podlech y Gabriel Heiler' | translate">Rebecca Podlech und Gabriel Heiler</span>
+        <span class="organizer_email">gabrielheiler@gmail.com, rebecca.podlech@t-online.de</span>
+        <span class="calname">rebi-gabi.26.07.2019</span>
+      </div>
+    </h4>
+    <h4>
+      <div title="hochzeit zum kalendar" class="addeventatc">
+        {{ 'agregar boda al calendario' | translate }}
+        <span class="start">2019-07-27 15:30</span>
+        <span class="end">2019-07-28 03:00</span>
+        <span class="timezone"><span class="timezone">Europe/Berlin</span></span>
+        <span class="title" [innerHTML]="'Casamiento Rebi + Gabi' | translate">Casamiento Rebi + Gabi</span>
+        <span class="description" [innerHTML]="'Casamiento Rebi + Gabi 2' | translate">Casamiento Rebi + Gabi</span>
+        <span class="location">Jugendkulturzentrum Königstadt, Saarbrücker Str. 24, 10405 Berlin</span>
+        <span class="organizer" [innerHTML]="'Rebecca Podlech y Gabriel Heiler' | translate">Rebecca Podlech und Gabriel Heiler</span>
+        <span class="organizer_email">gabrielheiler@gmail.com, rebecca.podlech@t-online.de</span>
+        <span class="calname">rebi-gabi.27.07.2019</span>
+      </div>
+    </h4>
+    <a class="maps-button" target="_blank" href="https://goo.gl/maps/RqvoQqDqJJZXDT1H6">
+      <p [innerHTML]="'Abrir en google maps' | translate"></p>
+    </a>
+  </div>
+</div>
