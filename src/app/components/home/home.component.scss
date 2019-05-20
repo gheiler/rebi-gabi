@@ -10,16 +10,20 @@
             font-size: 5em;
             max-width: 550px;
             margin-bottom: 20px;
+            span {
+                display: block;
+            }
         }
         h3 {
             font-size: 1.5em;
+            padding-bottom: 20px;
         }
     }
     
     .right-menu {
-        width: 185px;
         h4 {
             margin-bottom: 20px;
+            width: 185px;
         }
         .maps-button {
             display: block;
@@ -27,7 +31,7 @@
             background: url('/assets/img/google-maps.svg') center 10px no-repeat;
             background-size: 48px;
             padding: 70px 10px 10px;
-            width: 100%;
+            width: 185px;
             border-left: 2px solid #EF5350;
         }
         
@@ -38,6 +42,51 @@
 
         .maps-button:hover {
             background-color: #fafafa;
+        }
+    }
+    @media only screen and (max-width: 865px) and (min-width: 641px) {
+        .right-menu {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding-top: 30px;
+
+            h4 {
+                margin-bottom: 0;
+            }
+            h4 div, .maps-button {
+                border: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        .main {
+            padding-left: 20px;
+            h2 {
+                font-size: 2.3em;
+                span {
+                    display: inline;
+                }
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+        .right-menu {
+            width: 100%;
+            padding-top: 30px;
+
+            .maps-button {
+                background-size: 35px;
+                padding: 15px 0 15px 60px;
+                background-position: 10px 8px;
+                text-align: left;
+            }
+
+            .maps-button, h4 {
+                width: 100%;
+            }
         }
     }
 }

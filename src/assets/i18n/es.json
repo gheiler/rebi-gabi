@@ -10,8 +10,8 @@
     "inicio": "inicio",
     "civil": "civil",
     "boda": "boda",
-    "formulario": "formulario",
-    "Nos casamos y te invitamos a compartirlo juntos": "Nos casamos <br/> y te invitamos a <br/> compartirlo juntos",
+    "formulario": "confirmar",
+    "Nos casamos y te invitamos a compartirlo juntos": "Nos casamos <span></span>y te invitamos a <span></span>compartirlo juntos",
     "27 de Julio 15:30hs, Jugendkulturzentrum Königstadt, Saarbrücker Str. 24, 10405 Berlin.": "27 de Julio 15:30hs, Jugendkulturzentrum Königstadt, Saarbrücker Str. 24, 10405 Berlin.",
     "Abrir en google maps": "abrir en google maps"
 }

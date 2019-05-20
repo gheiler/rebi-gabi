@@ -26,9 +26,8 @@ button {
     cursor: pointer;
 }
 
-
 .main-container .addeventatc {
-    padding: 70px 15px 20px;
+    padding: 70px 15px 10px;
     width: 100%;
     text-align: center;
     border-left: 2px solid #EF5350;
@@ -66,4 +65,18 @@ button {
 }
 .main-container .addeventatc_dropdown .copyx {
     display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    .main-container .addeventatc {
+        padding: 15px 0 15px 60px;
+        text-align: left
+    }
+    .main-container .addeventatc .addeventatc_icon {    
+        width: 35px;
+        height: 35px;
+        background-size: 35px;
+        left: 10px;
+        top: 4px;
+    }
 }
