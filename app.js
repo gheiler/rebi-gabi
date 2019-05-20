@@ -13,6 +13,9 @@ const express = require('express'),
     app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, 'dist/rebi-gabi/index.html'));
     });
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, 'dist/rebi-gabi/index.html'));
+    });
 
     // configure server
     let port = process.env.PORT || 3001;
