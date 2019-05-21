@@ -1,2 +1,24 @@
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.1619605645947!2d13.41118321565014!3d52.53050377981619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1d37856ad7%3A0x358a76430490a4c!2sJugendkulturzentrum+K%C3%B6nigstadt!5e0!3m2!1sen!2sde!4v1558293545137!5m2!1sen!2sde" 
-  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="wedding">
+  <div class="info-cnt">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.1619605645947!2d13.41118321565014!3d52.53050377981619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1d37856ad7%3A0x358a76430490a4c!2sJugendkulturzentrum+K%C3%B6nigstadt!5e0!3m2!1sen!2sde!4v1558293545137!5m2!1sen!2sde" 
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="text-info">
+      <h3 [innerHTML]="'Nuestra Boda' | translate"></h3>
+      <p [innerHTML]="'La festejamos...' | translate"></p>
+      <div title="hochzeit zum kalendar" class="addeventatc">
+        {{ 'agregar boda al calendario' | translate }}
+        <span class="start">2019-07-27 15:30</span>
+        <span class="end">2019-07-28 03:00</span>
+        <span class="timezone"><span class="timezone">Europe/Berlin</span></span>
+        <span class="title" [innerHTML]="'Casamiento Rebi + Gabi' | translate">Casamiento Rebi + Gabi</span>
+        <span class="description" [innerHTML]="'Casamiento Rebi + Gabi 2' | translate">Casamiento Rebi + Gabi</span>
+        <span class="location">Jugendkulturzentrum Königstadt, Saarbrücker Str. 24, 10405 Berlin</span>
+        <span class="organizer" [innerHTML]="'Rebecca Podlech y Gabriel Heiler' | translate">Rebecca Podlech und Gabriel Heiler</span>
+        <span class="organizer_email">gabrielheiler@gmail.com, rebecca.podlech@t-online.de</span>
+        <span class="calname">rebi-gabi.27.07.2019</span>
+      </div>
+    </div>
+  </div>
+</div>

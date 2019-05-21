@@ -1,11 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Baloo|Crimson+Text|Goudy+Bookletter+1911|Josefin+Sans:400,600&display=swap');
-
+html {
+    height: 100%;
+}
 body {
     font-size: 12px;
     font-family: 'Baloo', cursive;
     font-family: 'Goudy Bookletter 1911', serif;
     font-family: 'Crimson Text', serif;
+    height: 100%;
+    padding: 8px;
+    margin: 0;
+    box-sizing: border-box;
+    // background-image: url('assets/img/bkg.jpg');
 }
 a {
     text-decoration: none;
@@ -30,6 +37,7 @@ button {
     padding: 70px 15px 10px;
     width: 100%;
     text-align: center;
+    border: none;
     border-left: 2px solid #EF5350;
     border-radius: 0;
     box-shadow: 0 0 transparent !important;
@@ -38,33 +46,38 @@ button {
     font-family: 'Crimson Text'!important;
     font-weight: 400!important;
     -webkit-font-smoothing: inherit!important;
-}
-.main-container .addeventatc .addeventatc_icon {
-    background-image: url('assets/img/calendar-27.svg')!important;
+    color: #333!important;
+    background-color: transparent;
+
+    &:hover {
+        font-size: 1.2em;
+    }
+
+    .addeventatc_icon {
+        background-image: url('assets/img/calendar-27.svg')!important;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        z-index: 1;
+        left: 67px;
+        top: 10px;
+        background-size: 48px 48px;
+        display: block;
+        background-position: center;
+        color: #fff !important;
+    }
+
+    &.sechsundzwanzig .addeventatc_icon {
+        background-image: url('assets/img/calendar-26.svg')!important;
+    }
 }
 
-.main-container .addeventatc.sechsundzwanzig .addeventatc_icon {
-    background-image: url('assets/img/calendar-26.svg')!important;
-}
-
-.main-container .addeventatc .addeventatc_icon {
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    z-index: 1;
-    left: 67px;
-    top: 10px;
-    background-size: 48px 48px;
-    display: block;
-    background-position: center;
-    color: #fff !important;
-}
-
-.main-container .addeventatc:hover {
-    font-size: 1.2em;
-}
 .main-container .addeventatc_dropdown .copyx {
     display: none;
+}
+
+.main-container .text-info .addeventatc .addeventatc_icon {
+    left: 104px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -78,5 +91,8 @@ button {
         background-size: 35px;
         left: 10px;
         top: 4px;
+    }
+    .main-container .text-info .addeventatc .addeventatc_icon {
+        left: 82px;
     }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var addeventatc: any;
 
 @Component({
   selector: 'app-registry',
@@ -10,6 +11,9 @@ export class RegistryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      addeventatc.refresh();
+    }, 0);
   }
 
 }
