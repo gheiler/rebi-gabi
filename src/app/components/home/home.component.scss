@@ -46,7 +46,7 @@
             background-color: #fafafa;
         }
     }
-    @media only screen and (max-width: 865px) and (min-width: 641px) {
+    @media only screen and (max-width: 865px) and (min-width: 720px) {
         .right-menu {
             display: flex;
             justify-content: space-around;
@@ -62,7 +62,7 @@
         }
     }
 
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 719px) {
         .main {
             padding-left: 20px;
             h2 {

@@ -1,5 +1,5 @@
 .wedding {
-    max-width: 640px;
+    max-width: 700px;
     margin: 0 auto;
 
     .info-cnt {
@@ -31,7 +31,7 @@
                 left: 30px;
                 padding: 70px 10px 10px 10px;
                 box-sizing: border-box;
-                width: 260px;
+                width: 300px;
                 background: #ffebeb;
             }
             
@@ -48,7 +48,7 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 719px) {
     .wedding {
         max-width: none;
         widows: 100%;
