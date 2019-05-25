@@ -46,6 +46,15 @@
             background-color: #fafafa;
         }
     }
+
+    .slider-cnt {
+        padding: 30px 0 50px 0;
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+        height: 450px;
+    }
+
     @media only screen and (max-width: 865px) and (min-width: 720px) {
         .right-menu {
             display: flex;

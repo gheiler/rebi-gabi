@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 declare var addeventatc: any;
 
@@ -10,8 +10,19 @@ declare var addeventatc: any;
 })
 export class HomeComponent implements OnInit {
   isStandesamt = false;
+  imageSources: Array<string>;
 
-  constructor(private route: ActivatedRoute, private ngZone: NgZone) { }
+  constructor(private route: ActivatedRoute) {
+    this.imageSources = new Array<string> ();
+    this.imageSources.push('/assets/img/uns/r+g.1.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.2.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.3.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.4.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.5.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.6.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.7.jpg');
+    this.imageSources.push('/assets/img/uns/r+g.8.jpg');
+  }
 
   ngOnInit() {
     setTimeout(() => {

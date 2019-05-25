@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 // libs
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {SlideshowModule} from 'ng-simple-slideshow';
+
+// components
 import { HomeComponent } from './components/home/home.component';
 import { MainTemplateComponent } from './components/main-template/main-template.component';
 import { LanguageService } from './services/language.service';
@@ -31,6 +34,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SlideshowModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

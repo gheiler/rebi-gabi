@@ -36,4 +36,13 @@
       <p [innerHTML]="'Abrir en google maps' | translate"></p>
     </a>
   </div>
+  <div class="slider-cnt">
+    <slideshow [height]="height"
+      [minHeight]="'250px'"
+      [autoPlay]="true"
+      [imageUrls]="imageSources"
+      [lazyLoad]="true"
+      [autoPlayWaitForLazyLoad]="true">
+    </slideshow>
+  </div>
 </div>
